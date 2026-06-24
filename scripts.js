@@ -1,3 +1,9 @@
+const EMAILJS_PUBLIC_KEY = 'TU_PUBLIC_KEY';
+const EMAILJS_SERVICE_ID = 'service_tu_id';
+const EMAILJS_TEMPLATE_ID = 'template_tu_id';
+
+emailjs.init(EMAILJS_PUBLIC_KEY);
+
 document.addEventListener('DOMContentLoaded', () => {
   const container = document.getElementById('projects-container');
 
@@ -30,4 +36,27 @@ document.addEventListener('DOMContentLoaded', () => {
     .catch(err => {
       container.innerHTML = `<div class="alert alert-warning text-center">${err.message}</div>`;
     });
+
+  const form = document.getElementById('contact-form');
+  const status = document.getElementById('form-status');
+  const submitBtn = document.getElementById('submit-btn');
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Enviando...';
+
+    emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form)
+      .then(() => {
+        status.innerHTML = '<span class="text-success">Mensaje enviado con éxito. Gracias!</span>';
+        form.reset();
+      })
+      .catch(() => {
+        status.innerHTML = '<span class="text-danger">Error al enviar. Intenta de nuevo.</span>';
+      })
+      .finally(() => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Enviar Mensaje';
+      });
+  });
 });
