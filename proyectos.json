@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "titulo": "Plataforma de Gestión de Reservas para Hostales de Montaña",
+    "descripcion": "Aplicación web para la administración de camas y habitaciones privadas, integrando un calendario visual y pasarela de pago.",
+    "tecnologias": ["HTML", "CSS", "JS", "Bootstrap"],
+    "imagen": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&q=80"
+  },
+  {
+    "id": 2,
+    "titulo": "App de Finanzas Personales",
+    "descripcion": "Panel de control minimalista para registrar gastos diarios e ingresos, con gráficos interactivos y cálculo de presupuesto mensual.",
+    "tecnologias": ["Python", "Django", "PostgreSQL", "JavaScript", "Chart.js", "Tailwind"],
+    "imagen": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80"
+  },
+  {
+    "id": 3,
+    "titulo": "E-Commerce de Café de Especialidad",
+    "descripcion": "Desarrollo de una tienda online completa enfocada en UX. Incluye carrito dinámico, filtros por origen y nivel de tueste, y blog de recetas.",
+    "tecnologias": ["React", "Node.js", "MongoDB"],
+    "imagen": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80"
+  },
+  {
+    "id": 4,
+    "titulo": "API del Clima Simple",
+    "descripcion": "Buscador de clima en tiempo real consumiendo una API pública de meteorología.",
+    "tecnologias": ["JavaScript", "Fetch API", "HTML", "CSS"],
+    "imagen": "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&q=80"
+  }
+]

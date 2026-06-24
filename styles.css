@@ -1,0 +1,86 @@
+:root {
+  --terracota: #E07A5F;
+  --terracota-dark: #C56A4F;
+  --cafe: #3D2B1F;
+  --cafe-light: #6F4E37;
+  --bg-light: #F8F9FA;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.text-terracota { color: var(--terracota); }
+.text-cafe { color: var(--cafe); }
+.bg-terracota { background-color: var(--terracota); }
+.bg-cafe { background-color: var(--cafe); }
+
+.btn-terracota {
+  background-color: var(--terracota);
+  border-color: var(--terracota);
+  color: #fff;
+}
+
+.btn-terracota:hover {
+  background-color: var(--terracota-dark);
+  border-color: var(--terracota-dark);
+  color: #fff;
+}
+
+.btn-outline-terracota {
+  border-color: var(--terracota);
+  color: var(--terracota);
+}
+
+.btn-outline-terracota:hover {
+  background-color: var(--terracota);
+  border-color: var(--terracota);
+  color: #fff;
+}
+
+.navbar {
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.nav-link {
+  color: var(--cafe) !important;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: var(--terracota) !important;
+}
+
+.skill-badge {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+}
+
+.card-project {
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-project .card-img-top {
+  border-radius: 12px 12px 0 0;
+  height: 200px;
+  object-fit: cover;
+}
+
+#hero {
+  background: linear-gradient(135deg, #fff 0%, #fdf0ed 100%);
+}
+
+@media (max-width: 576px) {
+  #hero h1 {
+    font-size: 2rem;
+  }
+}
