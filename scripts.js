@@ -1,6 +1,6 @@
-const EMAILJS_PUBLIC_KEY = 'TU_PUBLIC_KEY';
-const EMAILJS_SERVICE_ID = 'service_tu_id';
-const EMAILJS_TEMPLATE_ID = 'template_tu_id';
+const EMAILJS_PUBLIC_KEY = '1-UKWWQsrmRttVf9X';
+const EMAILJS_SERVICE_ID = 'service_i6hpkaf';
+const EMAILJS_TEMPLATE_ID = 'template_aljraih';
 
 emailjs.init('1-UKWWQsrmRttVf9X');
 
