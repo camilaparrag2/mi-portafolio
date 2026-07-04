@@ -15,18 +15,22 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(proyectos => {
       proyectos.forEach(proyecto => {
         const tecnologias = proyecto.tecnologias.map(tech =>
-          `<span class="badge bg-terracota me-1">${tech}</span>`
+          `<span class="badge bg-primary text-white border-0 me-1">${tech}</span>`
         ).join('');
 
         const card = document.createElement('div');
         card.className = 'col-md-6 col-lg-4';
         card.innerHTML = `
-          <div class="card card-project h-100">
+          <div class="card-project h-100 hover-lift">
             <img src="${proyecto.imagen}" class="card-img-top" alt="${proyecto.titulo}" loading="lazy">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title text-cafe">${proyecto.titulo}</h5>
-              <p class="card-text text-muted small flex-grow-1">${proyecto.descripcion}</p>
-              <div class="mt-auto">${tecnologias}</div>
+            <div class="card-body">
+              <h5 class="card-title text-white">${proyecto.titulo}</h5>
+              <p class="card-text text-secondary small flex-grow-1">${proyecto.descripcion}</p>
+              <div class="mt-3 technologies">${tecnologias}</div>
+              <div class="d-flex gap-2 mt-3 project-buttons">
+                <a href="https://github.com/camilaparra/${proyecto.titulo.toLowerCase().replace(/\s+/g, '-')}" target="_blank" class="btn btn-sm btn-outline-light">GitHub</a>
+                <a href="#" class="btn btn-sm btn-primary">Demo</a>
+              </div>
             </div>
           </div>
         `;
