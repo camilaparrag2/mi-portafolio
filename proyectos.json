@@ -12,10 +12,10 @@
     "id": 2,
     "titulo": "App de Finanzas Personales",
     "descripcion": "Panel de control minimalista para registrar gastos diarios e ingresos, con gráficos interactivos y cálculo de presupuesto mensual.",
-    "tecnologias": ["Python", "Django", "PostgreSQL", "JavaScript", "Chart.js", "Tailwind"],
-    "imagen": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80",
-    "github": "https://github.com/",
-    "demo": "https://example.com/"
+    "tecnologias": ["Python", "Django", "Django ORM", "PostgreSQL", "HTML5", "CSS3", "Bootstrap 5", "JavaScript", "Chart.js", "Bootstrap Icons", "Git", "GitHub"],
+    "imagen": "/static/img/mis-finanzas.png",
+    "github": "https://github.com/Camilamparrag/misfinanzas",
+    "demo": "https://misfinanzas-1-151h.onrender.com"
   },
   {
     "id": 3,
