@@ -3,125 +3,119 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portafolio personal - Desarrolladora Full Stack">
-  <title>Camila Parra | Desarrolladora Full Stack</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Portafolio profesional de Camila Parra - Desarrolladora Python | Django">
+  <title>Camila Parra | Portafolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+
+  <nav class="navbar navbar-expand-lg sticky-top bg-white shadow-sm">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#hero">
-        <span class="text-primary">Camila</span><span class="text-white">Parra</span>
+      <a class="navbar-brand fw-bold text-dark" href="#">
+        <span class="text-cafe"> Portafolio CP</span>
       </a>
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Menú de navegación">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav mx-auto">
           <li class="nav-item"><a class="nav-link" href="#hero">Inicio</a></li>
           <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
           <li class="nav-item"><a class="nav-link" href="#skills">Tecnologías</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
         </ul>
+        <div class="d-flex">
+          <a href="Curriculum%20Camila%20Parra%20Gonzalez.pdf" download class="btn btn-primary btn-sm rounded-pill px-3">
+            <i class="bi bi-download me-1"></i> Descargar CV
+          </a>
+        </div>
       </div>
     </div>
   </nav>
 
   <section id="hero" class="min-vh-100 d-flex align-items-center">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-7 order-lg-1 order-2">
-          <div class="hero-content">
-            <p class="overline text-primary mb-3">¡Hola, soy</p>
-            <h1 class="display-1 fw-bold mb-4">Camila Parra</h1>
-            <p class="subheading text-muted mb-5">Desarrolladora Python | Django</p>
-            <p class="lead text-secondary mb-5">Desarrolladora Full Stack apasionada por crear soluciones web elegantes y funcionales con enfoque en Python y Django.</p>
-            <div class="d-flex gap-3">
-              <a href="#projects" class="btn btn-primary btn-lg">Ver proyectos</a>
-              <a href="#contact" class="btn btn-outline-secondary btn-lg">Contactar</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-5 order-lg-2 order-1">
-          <div class="profile-wrapper">
-            <div class="profile-glow"></div>
-            <div class="profile-img-container">
-              <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=camila" alt="Camila Parra" class="profile-img">
-            </div>
-            <div class="tech-lines">
-              <div class="tech-line"></div>
-              <div class="tech-line"></div>
-              <div class="tech-line"></div>
-            </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <p class="text-muted fw-medium mb-2 animate-fade-in">Hola, soy</p>
+          <h1 class="display-4 fw-bold text-dark mb-2 animate-fade-in">Camila Parra González</h1>
+          <p class="text-cafe fw-medium fs-5 mb-3 animate-fade-in">
+            <i class="bi bi-code-slash me-2"></i>Desarrolladora Python | Django
+          </p>
+          <p class="text-muted fs-6 mb-4 animate-fade-in mx-auto" style="max-width: 540px;">
+            Creo aplicaciones web funcionales y atractivas con Python, Django y tecnologías modernas. Me apasiona construir experiencias digitales limpias, rápidas y accesibles.
+          </p>
+          <div class="d-flex flex-wrap gap-2 justify-content-center animate-fade-in">
+            <a href="#projects" class="btn btn-primary rounded-pill px-4 py-2">
+              <i class="bi bi-folder2-open me-2"></i>Ver Proyectos
+            </a>
+            <a href="#contact" class="btn btn-outline-primary rounded-pill px-4 py-2">
+              <i class="bi bi-envelope me-2"></i>Contactar
+            </a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="about" class="section py-6">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Sobre mí</h2>
-        <div class="section-divider"></div>
-      </div>
-      <div class="row gx-5">
-        <div class="col-lg-8">
-          <div class="about-content">
-            <p class="text-secondary mb-4">Soy una desarrolladora con experiencia en creación de aplicaciones web escalables y sistemas backend robustos. Mi enfoque se centra en escribir código limpio y mantenible siguiendo mejores prácticas de desarrollo.</p>
-            <p class="text-secondary mb-4">Especializada en Python con Django, combino mi pasión por la programación con excelentes habilidades de comunicación para entregar proyectos exitosamente dentro de los plazos establecidos.</p>
-            <div class="cta-buttons">
-              <a href="/cv.pdf" class="btn btn-primary mt-3" download>Descargar CV</a>
-            </div>
-          </div>
+  <section id="about" class="py-5 bg-light">
+    <div class="container py-4">
+      <h2 class="fw-bold text-dark text-center mb-5">Sobre Mí</h2>
+      <div class="row g-5 justify-content-center">
+        <div class="col-lg-5">
+          <p class="text-muted lh-lg">
+            Soy desarrolladora web con experiencia en Python, Django y tecnologías frontend-backend. 
+            Disfruto crear aplicaciones completas, desde la lógica del servidor hasta la experiencia 
+            de usuario, siempre buscando escribir código limpio y mantenible.
+          </p>
+          <p class="text-muted lh-lg">
+            Actualmente sigo aprendiendo y explorando nuevas herramientas para crecer como 
+            desarrolladora Full Stack.
+          </p>
         </div>
         <div class="col-lg-4">
-          <div class="info-grid">
-            <div class="info-item">
-              <div class="info-icon">
-                <svg fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2C8 2 4 6 4 12c0 5 4 9 8 11 4-2 8-6 8-11 0-6-4-10-8-10zm0 2c3.3 0 6 4.7 6 10v0.1c-1.5 0.8-3.3 1.2-6 1.2s-4.5-0.4-6-1.2v-0.1c0-5.3 2.7-10 6-10zm0 14c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"></path>
-                </svg>
+          <div class="d-flex flex-column gap-3">
+            <div class="d-flex align-items-center gap-3">
+              <div class="icon-box bg-primary bg-opacity-10 rounded-3 d-flex align-items-center justify-content-center" style="width: 44px; height: 44px;">
+                <i class="bi bi-geo-alt fs-5"></i>
               </div>
               <div>
-                <h4 class="info-title">Ubicación</h4>
-                <p class="info-text">Santiago, Chile</p>
+                <small class="text-muted d-block">Ubicación</small>
+                <span class="fw-medium text-dark">Chile</span>
               </div>
             </div>
-            <div class="info-item">
-              <div class="info-icon">
-                <svg fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M20 4H4c-1.1 0-2 0.9-2 2v12c0 1.1 0.9 2 2 2h16c1.1 0 2-0.9 2-2V6c0-1.1-0.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path>
-                </svg>
+            <div class="d-flex align-items-center gap-3">
+              <div class="icon-box bg-primary bg-opacity-10 rounded-3 d-flex align-items-center justify-content-center" style="width: 44px; height: 44px;">
+                <i class="bi bi-envelope fs-5"></i>
               </div>
               <div>
-                <h4 class="info-title">Email</h4>
-                <p class="info-text">camila.parra.dev@gmail.com</p>
+                <small class="text-muted d-block">Correo</small>
+                <a href="mailto:camila@example.com" class="fw-medium text-dark text-decoration-none">camilaparragon@gmail.com</a>
               </div>
             </div>
-            <div class="info-item">
-              <div class="info-icon">
-                <svg fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm0 0l8 8-11 11-3-3 7-7-7-7-3 3 3 3 7 7z"></path>
-                </svg>
+            <div class="d-flex align-items-center gap-3">
+              <div class="icon-box bg-primary bg-opacity-10 rounded-3 d-flex align-items-center justify-content-center" style="width: 44px; height: 44px;">
+                <i class="bi bi-github fs-5"></i>
               </div>
               <div>
-                <h4 class="info-title">GitHub</h4>
-                <p class="info-text"><a href="https://github.com/camilaparra" target="_blank" class="text-primary">@camilaparra</a></p>
+                <small class="text-muted d-block">GitHub</small>
+                <a href="https://github.com/" target="_blank" class="fw-medium text-dark text-decoration-none">github.com/camilamparrag</a>
               </div>
             </div>
-            <div class="info-item">
-              <div class="info-icon">
-                <svg fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.27v-1.16h-2.5v8.37h2.5v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.5M6.5 7.5a1.5 1.5 0 0 0 1.5-1.5A1.5 1.5 0 0 0 6.5 4.5 1.5 1.5 0 0 0 5 6 1.5 1.5 0 0 0 6.5 7.5z"></path>
-                </svg>
+            <div class="d-flex align-items-center gap-3">
+              <div class="icon-box bg-primary bg-opacity-10 rounded-3 d-flex align-items-center justify-content-center" style="width: 44px; height: 44px;">
+                <i class="bi bi-linkedin fs-5"></i>
               </div>
               <div>
-                <h4 class="info-title">LinkedIn</h4>
-                <p class="info-text"><a href="https://linkedin.com/in/camilaparra" target="_blank" class="text-primary">/in/camilaparra</a></p>
+                <small class="text-muted d-block">LinkedIn</small>
+                <a href="https://linkedin.com/" target="_blank" class="fw-medium text-dark text-decoration-none">linkedin.com/in/camila-monserrat-parra-gonzález-35102125a/</a>
               </div>
             </div>
           </div>
@@ -130,156 +124,231 @@
     </div>
   </section>
 
-  <section id="skills" class="section py-6">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Tecnologías</h2>
-        <div class="section-divider"></div>
-      </div>
-      <p class="text-center text-secondary mb-5 max-w-600">Tecnologías y herramientas que domino para crear soluciones completas:</p>
-      <div class="skills-grid">
-        <div class="skill-item">
-          <div class="skill-icon">
-            <svg fill="currentColor" viewBox="0 0 24 24">
-              <path d="M9.5,2A1.5,1.5 0 0,0 8,3.5V5H6.5A1.5,1.5 0 0,0 5,6.5V19A1.5,1.5 0 0,0 6.5,20.5H17.5A1.5,1.5 0 0,0 19,19V6.5A1.5,1.5 0 0,0 17.5,5H16V3.5A1.5,1.5 0 0,0 14.5,2H9.5M9.5,7H14.5V17.5H9.5V7M11.5,9.5V16.5H12.5V9.5H11.5M7.5,9.5V16.5H8.5V9.5H7.5Z"></path>
-            </svg>
+  <section id="skills" class="py-5">
+    <div class="container py-4">
+      <h2 class="fw-bold text-dark text-center mb-5">Tecnologías</h2>
+      <div class="row g-4 justify-content-center" id="skills-container">
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card card-skill border-0 shadow-sm text-center h-100">
+            <div class="card-body py-4">
+              <div class="skill-icon mb-3 text-dark fs-1">
+                <i class="bi bi-filetype-py"></i>
+              </div>
+              <h6 class="fw-semibold text-dark mb-1">Python</h6>
+              <p class="text-muted small mb-2">Lenguaje principal</p>
+              <span class="badge bg-primary bg-opacity-10 text-dark rounded-pill fw-normal">Avanzado</span>
+            </div>
           </div>
-          <span class="skill-name">Python</span>
         </div>
-        <div class="skill-item">
-          <div class="skill-icon">
-            <svg fill="currentColor" viewBox="0 0 24 24">
-              <path d="M1.125,6.5V19.25A1.25,1.25 0 0,0 2.375,20.5H21.625A1.25,1.25 0 0,0 22.875,19.25V6.5H1.125M1.125,2.375A1.375,1.375 0 0,1 2.5,1H21.5A1.375,1.375 0 0,1 22.875,2.375V5.125L15.25,9.5L7.625,5.125V2.375M8.875,8.125L3.5,12V18.875A1.375,1.375 0 0,0 4.875,20.25H10.25V11.625L8.875,10.375V8.125M10.625,17.125V11.875L13.5,12.75V18.125H18.25L10.625,17.125Z"></path>
-            </svg>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card card-skill border-0 shadow-sm text-center h-100">
+            <div class="card-body py-4">
+              <div class="skill-icon mb-3 text-dark fs-1">
+                <i class="bi bi-database"></i>
+              </div>
+              <h6 class="fw-semibold text-dark mb-1">Django</h6>
+              <p class="text-muted small mb-2">Framework backend</p>
+              <span class="badge bg-primary bg-opacity-10 text-dark rounded-pill fw-normal">Intermedio</span>
+            </div>
           </div>
-          <span class="skill-name">Django</span>
         </div>
-        <div class="skill-item">
-          <div class="skill-icon">
-            <svg fill="currentColor" viewBox="0 0 24 24">
-              <path d="M6.812,13.937L6,23L14.8,20.8L16.156,13.953M21,3H3C2.739,3,2.478,3.108,2.281,3.281C2.108,3.478,2,3.739,2,4V7.5L5,9L8,7.5V4C8,3.739,7.892,3.478,7.719,3.281C7.522,3.108,7.261,3,7,3H2V21H22V3H21M5.5,6.5V7.91L8,8.34V6.5H5.5M9.1,8.1L10.4,10.1L8.9,10.4L9.1,8.1M11.1,10.1L12.9,13.1L11.4,13.4L11.1,10.1M14,9.5L7,9.5V12.3L9.2,13.3L11.2,12.1L12.2,14.3L12.9,13.9L13.5,11.6L14.7,13.6L14,9.5Z"></path>
-            </svg>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card card-skill border-0 shadow-sm text-center h-100">
+            <div class="card-body py-4">
+              <div class="skill-icon mb-3 text-dark fs-1">
+                <i class="bi bi-server"></i>
+              </div>
+              <h6 class="fw-semibold text-dark mb-1">PostgreSQL</h6>
+              <p class="text-muted small mb-2">Base de datos</p>
+              <span class="badge bg-primary bg-opacity-10 text-dark rounded-pill fw-normal">Intermedio</span>
+            </div>
           </div>
-          <span class="skill-name">PostgreSQL</span>
         </div>
-        <div class="skill-item">
-          <div class="skill-icon">
-            <svg fill="currentColor" viewBox="0 0 24 24">
-              <path d="M9,2H15L14,14L8,12L9,2M9,22L8,14L3,12L9,22M15,22L16,14L21,12L15,22M3.62,7L1,7L3.62,7M21.38,7L24,7L21.38,7M3.62,7L5,4.13L3.62,7M21.38,7L20,4.13L21.38,7M3.62,7L1,7L3.62,7M21.38,7L24,7L21.38,7M3.38,9L8,11L3.38,13M15.62,9L21,11L15.62,13M20,4L19,2L21,4L20,4M2,4L3,2L1,4L2,4M1,7.5L2.5,9.5L1,11.5M23,7.5L21.5,9.5L23,11.5M1,11.5L2.5,13.5L1,15.5M23,11.5L21.5,13.5L23,15.5M7,3.5L5,2.5L7,1.5M17,3.5L19,2.5L17,1.5M6,12L6,11L5,12L6,12M19,12L19,11L18,12L19,12"></path>
-            </svg>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card card-skill border-0 shadow-sm text-center h-100">
+            <div class="card-body py-4">
+              <div class="skill-icon mb-3 text-dark fs-1">
+                <i class="bi bi-filetype-html"></i>
+              </div>
+              <h6 class="fw-semibold text-dark mb-1">HTML</h6>
+              <p class="text-muted small mb-2">Maquetación web</p>
+              <span class="badge bg-primary bg-opacity-10 text-dark rounded-pill fw-normal">Intermedio</span>
+            </div>
           </div>
-          <span class="skill-name">HTML5</span>
         </div>
-        <div class="skill-item">
-          <div class="skill-icon">
-            <svg fill="currentColor" viewBox="0 0 24 24">
-              <path d="M11.33,3A9,9 0 0,1 20.31,5.66L17.66,8.31A6,6 0 0,0 13.69,5.77M9.69,18.33A6,6 0 0,0 17.66,14.34L20.31,17A9,9 0 0,1 11.33,21M9.77,3.57L7.6,6.6L7.6,9.42L3.35,9.42L3.35,10.58L7.6,10.58L7.6,13.4L7.6,13.4L9.77,16.43L12.84,19.5L15.9,16.43L19,13.37L19,12.16L13.5,6.66L9.77,3.57M2.34,10.08L2.34,8.08L3.66,6.76L5.76,8.86L7.61,7.01L4.69,4.08L6.76,2.01L8.79,4.04L9.64,2.19L11.66,4.21L5.87,9.97L4.03,11.83L2.34,10.08M16.7,12.14L15.86,14.22L13.84,12.19L15.87,10.16L16.7,12.14M14.63,14.36L15.33,13.66L14.27,12.6L13.57,13.3L14.63,14.36M16.37,12.37L16.07,13.07L18.1,15.1L19.03,14.17L16.37,12.37M16.03,10.63L15.73,11.33L17.33,12.93L18.16,12.1L16.03,10.63M15.04,11.62L14.74,12.32L16.04,13.62L16.74,13.32L15.04,11.62M10.34,7.07L4.1,13.32L5.94,15.16L10.34,10.77V7.07Z"></path>
-            </svg>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card card-skill border-0 shadow-sm text-center h-100">
+            <div class="card-body py-4">
+              <div class="skill-icon mb-3 text-dark fs-1">
+                <i class="bi bi-filetype-css"></i>
+              </div>
+              <h6 class="fw-semibold text-dark mb-1">CSS</h6>
+              <p class="text-muted small mb-2">Estilos y layouts</p>
+              <span class="badge bg-primary bg-opacity-10 text-dark rounded-pill fw-normal">Intermedio</span>
+            </div>
           </div>
-          <span class="skill-name">CSS3</span>
         </div>
-        <div class="skill-item">
-          <div class="skill-icon">
-            <svg fill="currentColor" viewBox="0 0 24 24">
-              <path d="M3 3H21C21.553 3 22 3.447 22 4V20C22 20.553 21.553 21 21 21H3C2.447 21 2 20.553 2 20V4C2 3.447 2.447 3 3 3ZM8 8H16V10H8V8ZM8 12H16V14H8V12ZM8 16H12V18H8V16Z"></path>
-            </svg>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card card-skill border-0 shadow-sm text-center h-100">
+            <div class="card-body py-4">
+              <div class="skill-icon mb-3 text-dark fs-1">
+                <i class="bi bi-filetype-js"></i>
+              </div>
+              <h6 class="fw-semibold text-dark mb-1">JavaScript</h6>
+              <p class="text-muted small mb-2">Interactividad</p>
+              <span class="badge bg-primary bg-opacity-10 text-dark rounded-pill fw-normal">Intermedio</span>
+            </div>
           </div>
-          <span class="skill-name">JavaScript</span>
         </div>
-        <div class="skill-item">
-          <div class="skill-icon">
-            <svg fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-.905-.747-.696-1.323-.696-1.323.533-1.098 1.732-1.372 1.732-1.372 1.086-.582.833-1.269-.202-1.444-1.115-.242-1.77-1.014-1.77-1.014-.793-.399-1.624-.426-2.042-.428-1.032-.095-1.48.54-1.48.54.869-.215 1.628-.644 2.148-.986.154-.246.61-.258 1.086-.024 3.352 2.152 7.372 3.03 10.482 3.143.586-.041 1.173-.146 1.715-.315.054.252.103.501.154.754.063.263.126.526.186.789.452.359.465.676.288 1.267-.352.746-1.615 1.183-2.536.967-.902-.366-1.946-.706-3.194-.706-.518 0-1.038.105-1.517.319-.919.33-1.68.85-2.361.957.427.144.786.416.846.836.056.364.125.724.202 1.083 2.118-.541 4.462-.813 6.877-.813.47 0 .934.049 1.386.147.5.103.922.259 1.224.467.336-.241.75-.405 1.202-.405.454 0 .91.139 1.342.42.48.297.882.738 1.18 1.334.331.663.439 1.358.425 2.094-.03.524-.22 1.043-.565 1.521-.276.323-.638.659-.997.769-.342.116-1.291.114-2.042.028-1.75-.174-3.293-.595-4.54-1.267-.932-.735-.847-1.393-.847-1.393 0-.087.007-.174-.001-.261.382-1.057.491-2.151.239-3.177-.436-1.773-1.426-3.258-2.835-4.193-.476-.553-1.24-.922-2.145-.922-.955 0-1.72.539-2.113.934-1.021.797-1.564,2.292-1.564,3.751,0,.836.256,1.605.693,2.242.395.593.882,1.05,1.494,1.397,1.968-.296 3.814-.952 5.322-1.628.076-.059.151-.12.226-.183.072-.048.144-.097.215-.148Z"></path>
-            </svg>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card card-skill border-0 shadow-sm text-center h-100">
+            <div class="card-body py-4">
+              <div class="skill-icon mb-3 text-dark fs-1">
+                <i class="bi bi-git"></i>
+              </div>
+              <h6 class="fw-semibold text-dark mb-1">Git</h6>
+              <p class="text-muted small mb-2">Control de versiones</p>
+              <span class="badge bg-primary bg-opacity-10 text-dark rounded-pill fw-normal">Intermedio</span>
+            </div>
           </div>
-          <span class="skill-name">Git</span>
         </div>
-        <div class="skill-item">
-          <div class="skill-icon">
-            <svg fill="currentColor" viewBox="0 0 24 24">
-              <path d="M11,9H13V7M12,4a4,4 0 0 1 4,4a4,4 0 0 1-4,4a4,4 0 0 1-4,-4A4,4 0 0 1 12,4M12,14a7,7 0 0 1-7,7H6A5,5 0 0 1 1,16V9.5A5.5,5.5 0 0 1 6.5,4A5.5,5.5 0 0 1 12,9.5C12,11.11 11.29,12.59 10.29,13.59L10.29,13.6C10.34,13.66 10.4,13.71 10.46,13.74C10.95,13.86 11.47,14.04 11.94,14.2C12.12,14.24 12.3,14.21 12.44,14.17C12.69,14.1 12.93,13.97 13.12,13.81L13.12,13.81C13.25,13.69 13.35,13.55 13.41,13.39C13.42,13.38 13.42,13.36 13.42,13.34C13.42,13.17 13.35,12.99 13.28,12.8C13.21,12.61 13.11,12.44 13,12.29L13,12.29L13,12.28C12.68,12 12.22,11.81 11.76,11.71C11.38,11.6 10.93,11.55 10.5,11.55H10.36L9.86,11.55H9.5C9.12,11.55 8.75,11.61 8.4,11.72L8.4,11.72C8.26,11.8 8.11,11.91 8,12L8.14,11.6C8.58,10.63 9.26,9.85 10.11,9.33C10.72,8.96 11.36,8.75 12,8.75A1.75,1.75 0 0,0 13.75,10.5A1.75,1.75 0 0,1 15.25,12.25L15.25,12.25H15.5L15.58,12.23C16.61,11.37 17.29,10.14 17.29,8.75C17.29,6.68 15.32,4.75 13.25,4.75A6.3,6.3 0 0,0 6.94,11.18C6.94,11.18 7.24,10.9 7.24,11.16C7.24,11.42 7.06,11.67 6.79,11.84C6.5,12 6.18,12.14 5.88,12.24C5.9,12.27 5.92,12.29 5.94,12.31C5.94,12.31 5.94,12.31 5.94,12.31L8.69,15.06L10.44,12.31H10.5L12.8,15.06L15.06,12.31L16.3,13.56L16.61,13.27L16.53,12.64C16.4,11.78 15.75,11.17 14.88,10.87C13.63,10.4 12.62,10.25 12,10.25A1.25,1.25 0 0,1 10.75,11.5L10.75,11.5H10.66L10.56,11.26C10.35,10.95 10.11,10.66 9.86,10.41L9.87,10.41C9.25,10.94 8.75,11.62 8.35,12.35L8.39,12.39C8.32,12.48 8.25,12.58 8.19,12.69C8.13,12.8 8.08,12.92 8.08,13.04V13.07C8.08,13.41 8.17,13.76 8.35,14.04C8.49,14.18 8.66,14.27 8.84,14.31C9.02,14.35 9.22,14.33 9.36,14.27L9.36,14.27C9.82,14.16 10.24,13.86 10.56,13.45C10.68,13.32 10.79,13.18 10.89,13.07C11.21,12.74 11.46,12.53 11.66,12.35L11.66,12.35C11.87,12.15 12.05,11.97 12.18,11.84M12.61,19.08L8.5,14.97L8.5,14.03L12.78,9.75L13.22,10.19L9,14.41L9,15.41L12.61,19.08Z"></path>
-            </svg>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card card-skill border-0 shadow-sm text-center h-100">
+            <div class="card-body py-4">
+              <div class="skill-icon mb-3 text-dark fs-1">
+                <i class="bi bi-box"></i>
+              </div>
+              <h6 class="fw-semibold text-dark mb-1">Docker</h6>
+              <p class="text-muted small mb-2">Contenedores</p>
+              <span class="badge bg-primary bg-opacity-10 text-dark rounded-pill fw-normal">Básico</span>
+            </div>
           </div>
-          <span class="skill-name">Docker</span>
         </div>
-        <div class="skill-item">
-          <div class="skill-icon">
-           2            </div>
-          <span class="skill-name">Bootstrap</span>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card card-skill border-0 shadow-sm text-center h-100">
+            <div class="card-body py-4">
+              <div class="skill-icon mb-3 text-dark fs-1">
+                <i class="bi bi-bootstrap"></i>
+              </div>
+              <h6 class="fw-semibold text-dark mb-1">Bootstrap</h6>
+              <p class="text-muted small mb-2">Framework CSS</p>
+              <span class="badge bg-primary bg-opacity-10 text-dark rounded-pill fw-normal">Intermedio</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="projects" class="section py-6">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Proyectos</h2>
-        <div class="section-divider"></div>
+  <section id="experience" class="py-5 bg-light">
+    <div class="container py-4">
+      <h2 class="fw-bold text-dark text-center mb-5">Experiencia</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card card-experience border-0 shadow-sm mb-4">
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between align-items-start flex-wrap gap-2">
+                <div>
+                  <h5 class="fw-semibold text-dark mb-1">Desarrolladora Web Freelance</h5>
+                  <p class="text-primary fw-medium small mb-0">Proyectos propios · Remoto</p>
+                </div>
+                <span class="badge bg-primary bg-opacity-10 text-dark rounded-pill fw-normal">2026 - Presente</span>
+              </div>
+              <p class="text-muted small mt-3 mb-0">
+                Desarrollo de aplicaciones web con Python, Django, PostgreSQL y Bootstrap.
+                Creación de plataformas de gestión, paneles financieros y tiendas en línea.
+              </p>
+            </div>
+          </div>
+          <div class="card card-experience border-0 shadow-sm">
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between align-items-start flex-wrap gap-2">
+                <div>
+                  <h5 class="fw-semibold text-dark mb-1">Estudios en Desarrollo de Software</h5>
+                  <p class="text-primary fw-medium small mb-0">Formación autodidacta y cursos</p>
+                </div>
+                <span class="badge bg-primary bg-opacity-10 text-dark rounded-pill fw-normal">2026 - presente</span>
+              </div>
+              <p class="text-muted small mt-3 mb-0">
+                Formación en Python, Django, bases de datos relacionales, control de versiones con Git,
+                despliegue con Docker y desarrollo frontend con HTML, CSS, JavaScript y Bootstrap.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+  </section>
+
+  <section id="projects" class="py-5">
+    <div class="container py-4">
+      <h2 class="fw-bold text-dark text-center mb-5">Proyectos</h2>
       <div class="row g-4" id="projects-container">
       </div>
     </div>
   </section>
 
-  <section id="contact" class="section py-6">
-    <div class="container">
+  <section id="contact" class="py-5 bg-light">
+    <div class="container py-4">
+      <h2 class="fw-bold text-dark text-center mb-5">Contacto</h2>
+      <p class="text-muted text-center mb-5 mx-auto" style="max-width: 500px;">
+        ¿Tienes un proyecto en mente o quieres conversar? Estoy abierta a nuevas oportunidades.
+      </p>
       <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <div class="contact-wrapper">
-            <div class="section-header text-center">
-              <h2 class="section-title">¿Tienes un proyecto en mente?</h2>
-              <div class="section-divider"></div>
+        <div class="col-lg-6">
+          <form id="contact-form" class="bg-white p-4 p-md-5 rounded-4 shadow-sm">
+            <div class="mb-4">
+              <label for="user_name" class="form-label small fw-medium text-dark">Nombre</label>
+              <input type="text" name="user_name" id="user_name" class="form-control form-control-lg" placeholder="Tu nombre" required>
             </div>
-            <p class="text-secondary text-center mb-5">Trabajemos juntos para crear soluciones que impulsen tu negocio al siguiente nivel.</p>
-            <form id="contact-form">
-              <div class="row g-3">
-                <div class="col-md-6">
-                  <input type="text" name="user_name" class="form-control" placeholder="Tu nombre" required>
-                </div>
-                <div class="col-md-6">
-                  <input type="email" name="user_email" class="form-control" placeholder="Tu email" required>
-                </div>
-                <div class="col-12">
-                  <textarea name="message" class="form-control" rows="4" placeholder="Tu mensaje" required></textarea>
-                </div>
-                <div class="col-12">
-                  <button type="submit" class="btn btn-primary w-100 btn-lg">Hablemos</button>
-                </div>
-              </div>
-              <div id="form-status" class="mt-3 text-center"></div>
-              <div class="social-links text-center mt-4">
-                <a href="https://github.com/" target="_blank" class="btn btn-outline-secondary mx-2">GitHub</a>
-                <a href="https://linkedin.com/" target="_blank" class="btn btn-outline-secondary mx-2">LinkedIn</a>
-                <a href="mailto:tu@email.com" class="btn btn-outline-secondary ms-2">Email</a>
-              </div>
-            </form>
-          </div>
+            <div class="mb-4">
+              <label for="user_email" class="form-label small fw-medium text-dark">Correo electrónico</label>
+              <input type="email" name="user_email" id="user_email" class="form-control form-control-lg" placeholder="tu@correo.com" required>
+            </div>
+            <div class="mb-4">
+              <label for="message" class="form-label small fw-medium text-dark">Mensaje</label>
+              <textarea name="message" id="message" class="form-control form-control-lg" rows="5" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg w-100 rounded-pill" id="submit-btn">
+              <i class="bi bi-send me-2"></i>Enviar Mensaje
+            </button>
+          </form>
+          <div id="form-status" class="mt-3 text-center small"></div>
         </div>
       </div>
     </div>
   </section>
 
-  <footer class="custom-footer">
+  <footer class="bg-dark text-white pt-5 pb-4">
     <div class="container">
-      <div class="row align-items-center">
+      <div class="row gy-4">
         <div class="col-md-6">
-          <p class="mb-0">&copy; 2026 Camila Parra. Desarrolladora Full Stack.</p>
+          <h6 class="fw-bold mb-2">
+            <span class="text-cafe">CP</span>
+          </h6>
+          <p class="text-white-50 small mb-0">Desarrolladora Python | Django</p>
         </div>
-        <div class="col-md-6">
-          <div class="footer-links">
-            <a href="#hero" class="text-secondary">Inicio</a>
-            <a href="#about" class="text-secondary">Sobre mí</a>
-            <a href="#projects" class="text-secondary">Proyectos</a>
-            <a href="#contact" class="text-secondary">Contacto</a>
-            <a href="#" class="back-to-top" title="Volver arriba">
-              <svg fill="currentColor" viewBox="0 0 24 24">
-                <path d="M7.41 15.41L12 10.83L16.59 15.41L18 14L12 8L6 14L7.41 15.41Z"></path>
-              </svg>
+        <div class="col-md-6 text-md-end">
+          <div class="d-flex justify-content-md-end gap-3 mb-3">
+            <a href="https://github.com/" target="_blank" class="text-white-50 text-decoration-none fs-5 social-icon" aria-label="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="https://linkedin.com/" target="_blank" class="text-white-50 text-decoration-none fs-5 social-icon" aria-label="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="mailto:camila@example.com" class="text-white-50 text-decoration-none fs-5 social-icon" aria-label="Correo">
+              <i class="bi bi-envelope"></i>
             </a>
           </div>
+          <a href="#hero" class="btn btn-outline-light btn-sm rounded-circle back-to-top" aria-label="Volver arriba">
+            <i class="bi bi-arrow-up"></i>
+          </a>
         </div>
       </div>
+      <hr class="border-light border-opacity-10 my-4">
+      <p class="text-white-50 small text-center mb-0">
+        &copy; 2026 Camila Parra. Diseñado y desarrollado con <i class="bi bi-heart-fill text-danger"></i>
+      </p>
     </div>
   </footer>
 
